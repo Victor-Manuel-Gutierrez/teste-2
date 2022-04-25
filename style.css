@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Prompt&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(246, 236, 236);
+}
+
+header{
+    display: flex;
+    background-color: rgb(171, 218, 218);
+    flex-wrap: wrap;
+}
+
+header h2{
+    font-family: 'Inconsolata', monospace;
+    color: rgb(0, 0, 0);
+}
+
+.w50{
+    width: 50%;
+    padding: 0 5px;
+}
+
+.menu{
+    text-align: right;
+}
+
+.menu a{
+    color: rgb(0, 0, 0);
+    padding: 0 5px;
+    font-size: 17px;
+    font-family: 'Inconsolata', monospace;
+}
+
+section.banner{
+    min-height: 500px;
+    padding: 90px 0;
+    text-align: center;
+    background-color: rgb(213, 232, 225);
+    width: 100%;
+    font-family: 'Inconsolata', monospace;
+}
+
+section.diferencias{
+    display: flex;
+    padding: 40px 30px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.w33{
+    width: 50%;
+    padding: 60px 0;
+    border: 1px solid rgba(171, 218, 218, 0.496);
+    border-radius: 10px;
+}
+
+.w33 h2{
+    line-height: 60px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.w33 p{
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+footer{
+    font-family: 'Inconsolata', monospace;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(171, 218, 218);
+    text-align: center;
+    position: fixed;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        text-align: center;
+    }
+    .menu{
+        text-align: center;
+    }
+    .menu a{
+        line-height: 40px;
+        padding: 0 10px;
+    }
+
+    .w33,.w50{
+        margin-bottom: 20px 0;
+        width: 100%;
+    }
+}
